@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <!--  <meta http-equiv="X-UA-Compatible" content="text/html; charset=iso-8859-1" >
+   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    
+    
+<meta name="description" content="Mining One Bitcoin Provide Bitcoin Mining for you, Litecoin,Ethereum,Doge,bitcoin Cash,Bnb,Trx,Xrp,bch and Altcoins. How to Mining Your First Bitcoin."/>
+
+<meta name="keywords" content="Mining bitcoin,Mining Bitcoin,Mining Ethereum,scrypt mining,mining pool,altcoin mining,cloud mining,X11,hosted mining,blockchain, how to mine bitcoin, mine,bitcoin cloud mining, bitcoin farming,bitcoin mining sites,online bitcoin miner,best bitcoin mining"/>
+
+
+    <title>MiningOneBitcoin.com-Mining Your Own Bitcoin</title>
+
+    <!-- CSS Global -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+        <!--
+    <link href="https://fonts.googleapis.com/css?family=Jura:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+    -->
+
+<script src="js/jquery-2.2.4.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--
+    <script type="text/javascript" src="js/calc.js"></script>
+    -->
+
+  </head>
+
+	 
+<style type="text/css">
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 20px; height: 20px; cursor: default;}
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 1px solid #fff; background-position: 0 0; border-radius: 50px; background: #F5F5F5;}
+    .investRowCalc .ui-slider .ui-slider-range{
+        background: #fff;
+    } 
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -6px; margin-left: -.6em; }
+.ui-slider-horizontal .ui-slider-range { height: 18px; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+
+/* Component containers
+----------------------------------*/
+
+.ui-widget .ui-widget { font-size: 1em; }
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Verdana,Arial,sans-serif/*{ffDefault}*/; font-size: 1em; }
+.ui-widget-content {margin-left:10px; margin-top: 30px;  border: 0px solid #eee/*{borderColorContent}*/; border-radius: 50px; height:18px; background: #ffc200;background-size: cover;border: 1px solid #fff;/*{bgColorContent}*//*{bgImgUrlContent}*/ 50%/*{bgContentXPos}*/ 50%/*{bgContentYPos}*/ repeat-x/*{bgContentRepeat}*/; color: rgba(255,255,255,0.7)/*{fcContent}*/; }
+.ui-widget-content a { color: #222222/*{fcContent}*/; }
+.ui-widget-header { border: 0px solid rgba(255,255,255,0.31); background: #fff; color: #222222; font-weight: bold;  height:4px;}
+.ui-widget-header a { color: #222222/*{fcHeader}*/; }
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { height: 29px; width: 29px; background: url(img/11.png) center center no-repeat; border-radius: 50px;}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #555555/*{fcDefault}*/; text-decoration: none; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { height: 20px; width: 20px; background: rgba(0,0,0,0.11); border:2px solid rgba(0,0,0,0.31); border-radius:50px;}
+.ui-state-hover a, .ui-state-hover a:hover { color: #212121/*{fcHover}*/; text-decoration: none; }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: 0px solid #aaaaaa/*{borderColorActive}*/; *{bgColorActive}*/ url(img/slider_swap.png)/*{bgImgUrlActive}*/ 50%/*{bgActiveXPos}*/ 50%/*{bgActiveYPos}*/ repeat-x/*{bgActiveRepeat}*/; font-weight: normal/*{fwDefault}*/; color: #212121/*{fcActive}*/; }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #212121/*{fcActive}*/; text-decoration: none; }
+.ui-widget :active { outline: none; }
+.scale {
+    background: url(img/liner-min.png) left top no-repeat;
+    background-size: cover;
+    height: 35px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+
+
+
+table.tab {    font-size: 14px;
+    color: #000;
+    width: 100%;
+    border-width: 1px;
+    border-color: #DA0014;
+    border-collapse: collapse;
+    /* font-weight: 600; */
+    font-family: sans-serif;
+    letter-spacing: 1px;}
+table.tab th {
+font-size: 14px;
+    background-color: #02225c;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #02225c;
+    text-align: center;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 0px;
+}
+table.tab tr {}
+table.tab td {    font-size: 14px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    background-color: #F1F1F1;}
+
+
+table.blank {font-size: 14px;
+    color: #000;
+    width: 100%;
+    border-width: 1px;
+    border-color: #DA0014;
+    border-collapse: collapse;
+    /* font-weight: 600; */
+    font-family: sans-serif;
+    letter-spacing:.5px;}
+table.blank th {font-size:14px;background-color:#abd28e;border-width: 0px;padding: 8px;border-style: solid;border-color: #9dcc7a;text-align:left;}
+table.blank tr {}
+table.blank td {font-size:14px;border-width: 0px;padding: 8px;border-style: solid;border-color: #9dcc7a;}
+
+    </style>
+    
+<body>
+<!-- Wrapper -->
+<div class="wrapper investWrapper">
+    <div class="container-fluid headerInvest">
+       <div class="row">
+           <div class="container">
+               <div class="row">
+                    <div class="col-xs-3 left">
+                        <a href="?a=home"><img src="img/logo.png" alt="" class="logo"></a>
+                    </div>
+                    <div class="col-xs-9 right">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <ul class="list-inline headerMenu">
+                                    <li>
+                                        <a href="?a=home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="?a=cust&page=about">About</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="?a=cust&page=bounty">$100k Bounty</a>
+                                    </li>
+                                    <li>
+                                        <a href="?a=faq">Faq</a>
+                                    </li>
+                                    <li>
+                                        <a href="?a=news">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="?a=support">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-4">
+                                    
+                                 <a href="?a=logout" style="padding-top: 5px;" class="loginBut floatLeft">Logout</a>
+                                <a href="?a=account" style="padding-top: 5px;" class="loginBut floatLeft">Account</a>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .cabMen{
+            color:rgb(2, 34, 92);
+        }
+        .cabMen:hover{
+            color:#a2a2a3;
+        }
+    </style>
+    <div class="container-fluid headerLine"></div>
+    <div class="container-fluid headerInvest">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <table class="table headerMenuT">
+                            <tr>
+                                <td>
+                                    <a href="?a=account" class="cabMen" ><img src="img/mico1.png" alt="">dashboard</a>
+                                </td>
+                                <td>
+                                    <a href="?a=deposit_list" class="cabMen"><img src="img/mico5.png" alt="">Running Miners</a>
+                                </td>
+                                <td>
+                                    <a href="?a=earnings" class="cabMen"><img src="img/mico3.png" alt="">OPERATIONS history</a>
+                                </td>
+                                <td>
+                                    <a href="?a=referals" class="cabMen"><img src="img/mico4.png" alt="">Referrals</a>
+                                </td>
+                                 <td>
+                                    <a href="?a=referallinks" class="cabMen"><img src="img/mico4.png" alt="">Promotional </a>
+                                </td>
+                                <td>
+                                    <a href="?a=edit_account" class="cabMen"><img src="img/mico2.png" alt="">Profile Settings</a>
+                                </td>
+                                
+                                <td>
+                                    <a href="?a=security" class="cabMen"><img src="img/mico1.png" alt="">Security</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<style>
+    .bigText,.lastStat span{
+          font-family:  Roboto-Bold,sans-serif;
+    }
+</style>
+
+
+
+<script>
+var delay = 300;
+countEarnings = function() {
+  var totalProfit = 0.00000000;
+  var balance = 6.0E-7;
+  var dps = document.getElementsByClassName('deposit_pb');
+  for (i in dps) {
+    if (isNaN(parseInt(i))) continue;
+    var amount = parseFloat(dps[i].getAttribute('data-amount'));
+    if (isNaN(amount)) return;
+    var compound = parseFloat(dps[i].getAttribute('data-compound'));
+    if (isNaN(compound)) compound = 0;
+    var percent = parseFloat(dps[i].getAttribute('data-percent'));
+    if (isNaN(percent)) return;
+    var duration = parseFloat(dps[i].getAttribute('data-duration'));
+    if (isNaN(duration)) return;
+    var last_pay = parseFloat(dps[i].getAttribute('data-last-pay'));
+    if (isNaN(last_pay)) return;
+    var totaltime = parseFloat(dps[i].getAttribute('data-totaltime'));
+    if (isNaN(totaltime)) return;
+    duration += delay;
+    if (totaltime > 0 && duration > totaltime) duration = totaltime;
+    dps[i].setAttribute('data-duration', duration);
+    var profit = (amount/100)*(duration/1000)*(percent/3600);
+    totalProfit += profit;
+    var profit1 = (amount/100)*((duration-last_pay)/1000)*(percent/3600);
+    balance += profit1*(1-(compound/100));
+  }
+  var obj = document.getElementById('total_profit');
+  if (obj) {
+    obj.innerHTML = totalProfit.toFixed(13);
+  }
+  var obj = document.getElementById('total_balance');
+  if (obj) {
+    obj.innerHTML = '₿'+balance.toFixed(8);
+  }
+  setTimeout('countEarnings()', delay);
+};
+</script>
+
+
+<div style="display:none">
+<span class="deposit_pb" data-totaltime="12960000000" data-duration="235788000" data-last-pay="172800000" data-percent="0.0125" data-amount="0.0001000000" data-compound=""></span>
+</div>
+
+<script>
+$(document).ready(function() {
+    var f = document.getElementById('bitcoin');
+    setInterval(function() {
+        f.style.display = (f.style.display == 'none' ? '' : 'none');
+    }, 1000); 
+    
+});
+</script>
+
+
+
+
+        <div class="container-fluid">
+           
+        <div class="row">
+            <div class="container">
+                <div class="row">    
+            <!--      <p style="font-size:18px;font-weight:bold;color:#34d328;margin-top:50px;"><a href="https://chain.so/tx/LTC/aadf36ddc95a418bf5f96d93f2ef028f5c3fc7ab597e68e6400dfa46bf8121c0" target="_blank">[2022/3/23]MiningOneBitcoin Just Paid Litecoin Bonus.</a></p>
+ <p style="font-size:18px;font-weight:bold;color:#34d328;margin-top:50px;"><a href="https://chain.so/tx/LTC/aadf36ddc95a418bf5f96d93f2ef028f5c3fc7ab597e68e6400dfa46bf8121c0" target="_blank">[2022/3/22]MiningOneBitcoin Just Paid Litecoin Bonus.</a></p>
+  <p style="font-size:18px;font-weight:bold;color:#34d328;margin-top:5px;"><a href="https://chain.so/tx/LTC/aa083aa5dc9f2eaa0af7f2b2e6c39b2b0e301c44bc893c66421cf5b579d8281c" target="_blank">[2022/3/21]MiningOneBitcoin Just Paid Litecoin Bonus.</a></p>
+<p style="font-size:18px;font-weight:bold;color:#34d328;margin-top:5px;"><a href="https://chain.so/tx/LTC/4ef8fd0c5a82fc975e0dcbd14101190e209c203bee4cfea0d8c59f2e963c6855" target="_blank">[2022/3/20]MiningOneBitcoin Just Paid Litecoin Bonus.</a></p>
+<p style="font-size:18px;font-weight:bold;color:#34d328;margin-top:5px;"><a href="https://chain.so/tx/LTC/b60069089225b0e27c25b9551a44630d029240627f406ec73daaf5d2b5fc7c1b" target="_blank">[2022/3/19]MiningOneBitcoin Just Paid Litecoin Bonus.</a></p>
+ <p style="font-size:18px;font-weight:bold;color:#34d328;margin-top:5px;"><a href="https://chain.so/tx/LTC/91b57946cab6f6904452a2381f7d67c1893d75dad7f2dee2fd9c3590b4da6cf4" target="_blank">[2022/3/18]MiningOneBitcoin Just Paid Litecoin Bonus.</a></p>
+                                                             <p style="font-size:18px;font-weight:bold;color:#34d328;margin-top:5px;"><a href="https://chain.so/tx/LTC/039d70b1aa99ada5cafdcd2e1cece6c7346342658039710f983b684845c077af" target="_blank">[2022/3/17]MiningOneBitcoin Just Paid Litecoin Bonus.</a></p>
+                                                                 <p style="font-size:18px;font-weight:bold;color:#34d328;margin-top:0px;"><a href="https://chain.so/tx/LTC/de1fd5d1e1680fdefb4e0528522388c7737ad64bad671170c2ac54c6eaae5d86" target="_blank">[2022/3/16]MiningOneBitcoin Just Paid Litecoin Bonus.</a></p>
+<p style="font-size:18px;font-weight:bold;color:#34d328;margin-top:0px;"><a href="https://chain.so/tx/LTC/a8f6980b4d44803b1fe2428f2e71c8443dd5ebec793a253b12e5b998c463c6f8" target="_blank">[2022/3/15]MiningOneBitcoin Just Paid Litecoin Bonus.</a></p>
+                        <p style="font-size:18px;font-weight:bold;color:#34d328;margin-top:5px;"><a href="https://chain.so/tx/LTC/e049b96202837277f3eb270dd5482c634578b32925cf236ca293c286723ecf4b" target="_blank">[2022/3/14]MiningOneBitcoin Just Paid Litecoin Bonus.</a></p>
+                       <p style="font-size:18px;font-weight:bold;color:#34d328;margin-top:5px;"><a href="https://chain.so/tx/LTC/54d22e7111303965ab32f57274ea5c9092840c5e9b280c164651a189ad07a54e" target="_blank">[2022/3/13]MiningOneBitcoin Just Paid Litecoin Bonus.</a></p>
+               
+                                   <p style="font-size:18px;font-weight:bold;color:#34d328;margin-top:50px;"><a href="https://miningonebitcoin.com/?a=news" target="_blank">[Click][3 Days Bonus]🔥🔥🔥Bitcoin will rebound soon.
+
+</a></p>
+                 
+  -->    
+
+<div style="border: 1px solid #ccc;height:50px;border-radius: 30px;background: #434f71;box-shadow: 1px 2px 16px 10px rgb(22 22 22 / 7%);margin-top: 18px;">
+
+<p name="C4" style="font-size:18px;font-weight:bold;color: #ffffff;float:left;margin-top:10px;padding-left:50px;text-decoration: underline;"><a href="https://miningonebitcoin.com/?a=cust&amp;page=howtomine#video1" target="_blank">[1.Video Tutorial]How To Make Deposit</a></p>
+
+<p style="font-size:18px;font-weight:bold;color: #ffffff;float:right;margin-top:10px;padding-right:50px;text-decoration: underline;"><a href="https://miningonebitcoin.com/?a=cust&amp;page=howtomine#video2" target="_blank">[2.Video Tutorial]How To Make Withdrawal</a></p>
+
+
+</div>             
+                                       
+                    <div class="col-xs-6 left">
+                        <p class="lastStat">Last access: <span>Jan-21-2023 01:11:21 PM</span></p>
+                    </div>
+                    <div class="col-xs-6 right">
+                        <p class="lastStat">Pending withdraw: <span>&#8383;0.00000000</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6  whiteLeft">
+                        <div class="whiteRadBg">
+                            <div class="row">
+                               
+                                
+                                
+                                <div class="col-xs-8 left">
+                                    <p class="cabTitle">Estimated Mined Bitcoin</p>
+                                    
+                                    <p class="bigText" style="font-size: 43px;"><span id="bitcoin" style='font-size: 45px; color: rgb(52, 211, 40); position: absolute; right:313PX;top: 30px;'>&#8383;
+                                   
+                                    </span>&#8383;<span id="total_profit">0.00000060</span></p>
+                                    <ul style="width:500px;float:left;padding-left:0px;">
+                                        <li style="float:left;list-style:none;margin-right:10px;"><a href="/?a=deposit"  style="background:#ffc200;" class="transpBut makeDep floatLeft">Add Miner</a></li>
+                                        <li style="float:left;list-style:none;margin-right:10px;"><a href="/?a=deposit"  style="background:#ffc200;" class="transpBut makeDep floatLeft">Make Deposit</a></li>
+                                        
+                                    
+<!--
+<form method=post name=mainform  action="/certificate/index.php" target="_blank"><input type="hidden" name="form_id" value="16743814132034"><input type="hidden" name="form_token" value="bcacc7419fadb51c4d782414b6115468">
+<input type=hidden name=name value='po12'>
+<input type=hidden name=date value='Jan-19-2023'>
+<input type=hidden name=hashpower value='100'>
+<input type=hidden name=id value='600199'>
+
+<li style="float:left;list-style:none;"><input type="submit" name="generate" value="your certificate" class="transpBut makeDep" style="padding-bottom:10px;"></li>
+
+</form>
+-->
+
+                                 </ul>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="img/arrowUp.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+
+                   
+                    <div class="col-xs-6 whiteRight">
+                        <div class="whiteRadBg">
+                            <div class="row">
+                                 <div class="col-xs-8 left">
+                                    <p class="cabTitle">Balance(Update Every 24 Minutes)</p>
+                                    <p class="bigText" style="font-size: 43px;" id="total_balance1">5.0E-1</p>
+                                  <!-- <a href="https://miningonebitcoin.com/index.php?a=news" target="_blank">Balance is not updated in real-time,Read More.</a> -->
+                                    
+                                       
+        <script> 
+       var text = document.getElementById("total_balance1").innerHTML;
+       fixtext=parseFloat(text).toFixed(8);
+       document.getElementById("total_balance1").innerHTML = '₿'+fixtext;
+
+     </script>
+                    
+    
+                                  <!--
+                                  <a href="https://t.me/miningonebitcoin" target="_blank">
+<div style="background: url(/images/telegram.png) center no-repeat #2d90cd;height:60px;width:60PX;POSITION: absolute;    TOP: 30PX;
+    RIGHT: 0PX;BORDER-RADIUS: 5PX;box-shadow: rgb(230 255 22 / 77%) 2px 6px 10px 3px">
+
+
+</div>
+</a>
+								-->
+                                  <ul style="width:500px;float:left;padding-left:0px;">
+                                    <li style="float:left;list-style:none;margin-right:10px;"><a href="/?a=withdraw" class="transpBut makeDep floatLeft">Withdraw </a></li>
+                                   <li style="float:left;list-style:none;margin-right:10px; "><a href="/?a=cust&page=howtomine"  style="   background: #34d328;color: #fff;" target="_blank" class="transpBut makeDep floatLeft">How to purchase miner?</a></li>
+                                  </ul>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="img/arrowUp.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 whiteRadBg mainCabStat">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <p class="cabTitle">Withdraw total</p>
+                                <p class="bigText">&#8383;0.00000000</p>
+                            </div>
+                            <div class="col-xs-2">
+                                <img src="img/logo2.png" alt="">
+                            </div>
+                            <div class="col-xs-5">
+                                <p class="cabTitle">Active HashPower</p>
+                                <p class="bigText">100 Gh/s</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+<script type="text/javascript">
+
+    
+    function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+   /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+  
+</script>
+                
+                
+                <div class="row mainCabRefRow">
+                    <div class="col-xs-3">
+                        <p class="persRefText right">Personal Affiliate Link:</p>
+                    </div>
+                    <div class="col-xs-5">
+                        <input type="text" class="reflinkInp" value="https://miningonebitcoin.com/?ref=po12" id="myInput">
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="#" class="blueBut mainRefBut floatLeft btn-clipboard" data-clipboard-text="https://miningonebitcoin.com/?ref=po12" id="btn-copy-1" data-clipboard-target="#textarea-1" onclick="myFunction()"> 
+                            <img src="img/linkBut.png" alt="">copy link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+countEarnings();
+</script>
+
+<style>
+ .bot-links1 {
+    position: fixed;
+    top: 185px;
+    right: 42px;
+    width: 82px;
+    padding: .5em .5em 1em 1em;
+    z-index: 2147483639;
+}
+ .bot-links1 li input {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    box-shadow: rgb(19 225 28) 2px 6px 10px 3px;
+    border-radius: 5%;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1em;
+    transition: all .4s ease;
+}
+
+.bot-links1 .telegram-link {
+    background: url(/img/certt.png) center no-repeat;
+}
+</style>
+
+
+<div class="bot-links1">
+
+<form method=post name=mainform  action="https://richminingnft.com/index.php" target="_blank">
+<input type=hidden name=name value='tino'>
+<input type=hidden name=date value='Jan-19-2023'>
+<input type=hidden name=hashpower value='100'>
+<input type=hidden name=id value='600199'>
+
+<li style="float:left;list-style:none;"><input type="submit" name="generate" value="" class="transpBut makeDep telegram-link" style="padding-bottom:10px;height: 119px;width:100px;"></li>
+
+</form>
+</div>
+
+    <div class="container-fluid yellowLine">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="list-inline">
+                            <li>Join MiningOneBitcoin.com-Mining Your Own Bitcoin now,Start Mining Bitcoin!</li>
+
+                                                 							 <li>
+                                <a href="?a=account" class="transpBut creatAccBot">account</a>
+                            </li>
+							                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <ul class="list-inline footerMenu">
+                        <li>
+                             <a href="?a=home">Home</a>
+                         </li>
+                         <li>
+                             <a href="?a=cust&page=about">About</a>
+                         </li>
+                         <li>
+<a href="?a=cust&page=bounty">$100k Bounty</a>                         </li>
+                         <li>
+                             <a href="?a=faq">Faq</a>
+                         </li>
+                         <li>
+                             <a href="?a=support">Contact us</a>
+                         </li>
+						 <li>
+                            <a href="?a=logout"  style="color:#000" class="loginBut">Logout</a>
+                        </li>
+                        <li>
+                            <a href="?a=account"  style="color:#000" class="loginBut">Account</a>
+                        </li>
+						                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row footerLine"></div>
+        <!--
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="list-inline socFooter">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="img/fsoc1.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="img/fsoc2.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <img src="img/fsoc3.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://t.me/" target="_blank">
+                                    <img src="img/fsoc4.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <div class="row footerLine"></div>
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="list-inline footerInfo">
+                            <!--
+                            <li>
+                                <span data-toggle="modal" data-target="#policyModal">PRIVACY POLICY</span>
+                            </li>
+                            -->
+                            <li>
+                                <a href="#">
+                                    <a href="?a=home"><img src="img/logo1.png" alt=""></a>
+                                </a>
+                            </li>
+                            <!--
+                            <li>
+                                <span data-toggle="modal" data-target="#usereInfoModal">USER INFORMATION</span>
+                            </li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="copy" id="copytext">&#9400; 2022 MiningOneBitcoin.com-Mining Your Own Bitcoin. All Right Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<script type="text/javascript" src="js/customJS.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+
+-->
+
+<!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+    window.__be = window.__be || {};
+    window.__be.id = "61f286b9f4eb3b000715eeae";
+    (function() {
+        var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+        be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+    })();
+</script>
+<!-- End of ChatBot code -->
+
+<style>
+ .bot-links {
+    position: fixed;
+    top: 228px;
+    left: 0;
+    width: 82px;
+    padding: .5em .5em 1em 1em;
+    z-index: 2147483639;
+}
+ .bot-links a {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    box-shadow: rgb(230 255 22 / 77%) 2px 6px 10px 3px;
+    border-radius: 5%;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1em;
+    transition: all .4s ease;
+}
+
+.bot-links .telegram-link {
+    background: url(/images/telegram.png) center no-repeat #2d90cd;
+}
+</style>
+<!--
+<div class="bot-links">
+
+<a href="https://t.me/miningonebitcoin" target="_blank" class="telegram-link"></a>
+
+</div>
+-->
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=Jodt2Ex9AmhEbWmv&ck=Jodt2Ex9AmhEbWmv"></script>
+
+
+<!--
+-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-226721784-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-226721784-1');
+</script>
+-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BMJEH0C7FN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BMJEH0C7FN');
+</script>
+
+
+
+
+</body>
